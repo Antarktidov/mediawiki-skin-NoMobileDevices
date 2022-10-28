@@ -1,0 +1,88 @@
+{
+	"name": "NoMobileDevices",
+	"version": "1.0.0",
+	"author": [
+		"..."
+	],
+	"descriptionmsg": "NoMobileDevices-skin-desc",
+	"namemsg": "skinname-NoMobileDevices",
+	"license-name": "CC0-1.0",
+	"type": "skin",
+	"requires": {
+		"MediaWiki": ">= 1.38.0"
+	},
+	"ValidSkinNames": {
+		"nomobiledevices": {
+			"class": "SkinMustache",
+			"args": [
+				{
+					"name": "NoMobileDevices",
+					"responsive": true,
+					"messages": [
+						"example-no-categories",
+						"sitetitle",
+						"search",
+						"otherlanguages",
+						"tagline",
+						"navigation-heading"
+					],
+					"styles": [
+						"mediawiki.ui.icon",
+						"mediawiki.ui.button",
+						"skins.example.styles"
+					],
+					"scripts": [
+						"skins.example"
+					]
+				}
+			]
+		}
+	},
+	"MessagesDirs": {
+		"NoMobileDevices": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"skins.example.styles": {
+			"class": "ResourceLoaderSkinModule",
+			"features": {
+				"normalize": true,
+				"elements": true,
+				"content-tables": true,
+				"content-links": false,
+				"content-media": false,
+				"content-links-external": false,
+				"interface-message-box": true,
+				"interface-category": false,
+				"toc": true
+			},
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"styles": [
+				"resources/skin.less"
+			]
+		},
+		"skins.example": {
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"packageFiles": [
+				"resources/skin.js"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "NoMobileDevices"
+	},
+	"ResourceModuleSkinStyles": {
+		"NoMobileDevices": {
+			"+ext.echo.styles.badge": "resources/extensions/echo.styles.badge.less"
+		}
+	},
+	"manifest_version": 2
+}
