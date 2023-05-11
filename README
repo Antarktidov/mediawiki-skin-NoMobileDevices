@@ -6,7 +6,7 @@ $wgDefaultMobileSkin = 'nomobiledevices';
 
 Done. Now users won't be able to read your wiki from their phones.
 [RU]
-Этот скин создан специально для тех, кто не хочет, чтобы его вики читали с телефона. Чтобы использовать этот скин, скачайте расширение https://www.mediawiki.org/wiki/Extension:MobileFrontend и установите его, следуя инструкциям. Затес скачайте этот скин, назовите папку с ним NoMobileDevices, поместите её в паку Skins и пропишите в LocalSettings.php
+Этот скин создан специально для тех, кто не хочет, чтобы его вики читали с телефона. Чтобы использовать этот скин, скачайте расширение https://www.mediawiki.org/wiki/Extension:MobileFrontend и установите его, следуя инструкциям. Затем скачайте этот скин, назовите папку с ним NoMobileDevices, поместите её в паку Skins и пропишите в LocalSettings.php
 
 wfLoadSkin( 'NoMobileDevices' );
 $wgDefaultMobileSkin = 'nomobiledevices';
